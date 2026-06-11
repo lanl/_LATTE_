@@ -17,9 +17,6 @@ time-evolving scientific fields. The typical workflow is:
 3. Train a transformer over latent tokens.
 4. Roll out the transformer and decode predicted tokens to pixelspace with VQ-VAE.
 
-This public repository contains code and configuration templates only. It does
-not include datasets, checkpoints, generated tokens, or rollouts.
-
 ## Installation
 
 Install PyTorch for your hardware first, following the official PyTorch
