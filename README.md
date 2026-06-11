@@ -5,6 +5,7 @@
 <img width="850" height="563" alt="Screenshot 2026-06-11 at 3 57 41 PM" src="https://github.com/user-attachments/assets/41e3e775-86d8-4e24-a2d6-74bb127137dc" />
 
 # LATTE
+O#: O5130 
 
 LATTE is a research codebase for learning latent-token dynamics models for
 time-evolving scientific fields. The typical workflow is:
@@ -116,3 +117,26 @@ rollouts, plots, logs, and local data outside Git or under ignored directories
 such as `runs/`, `outputs/`, `tokens/`, `rollouts/`, and `checkpoints/`.
 
 ## License
+
+O#: O5130
+
+© 2026. Triad National Security, LLC. All rights reserved.
+
+This program was produced under U.S. Government contract 89233218CNA000001 for Los Alamos
+
+National Laboratory (LANL), which is operated by Triad National Security, LLC for the U.S.
+
+Department of Energy/National Nuclear Security Administration. All rights in the program are
+
+reserved by Triad National Security, LLC, and the U.S. Department of Energy/National Nuclear
+
+Security Administration. The Government is granted for itself and others acting on its behalf a
+
+nonexclusive, paid-up, irrevocable worldwide license in this material to reproduce, prepare
+
+derivative works, distribute copies to the public, perform publicly and display publicly, and to permit
+
+others to do so.
+
+
+
