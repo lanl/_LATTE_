@@ -1,0 +1,10 @@
+numpy<2.0
+matplotlib<3.9
+pillow
+lightning
+tensorboard
+einops
+h5py
+meshio
+pandas
+tqdm

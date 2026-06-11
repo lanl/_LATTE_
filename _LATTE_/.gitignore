@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Local configuration
+configs/local/
+*.local.json
+*.local.yaml
+*.local.yml
+
+# Data and generated artifacts
+data/
+runs/
+outputs/
+logs/
+tokens/
+rollouts/
+checkpoints/
+ckpts/
+plots/
+wandb/
+lightning_logs/
+
+# Large ML/science artifacts
+*.ckpt
+*.pt
+*.pth
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.nc
+*.vtk
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

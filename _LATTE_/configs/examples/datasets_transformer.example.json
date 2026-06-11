@@ -1,0 +1,26 @@
+{
+  "datasets": {
+    "ExampleTokenDataset": {
+      "class": "src.data.datasets.tokens_npz_deck_csv:T1RowwiseWithDeckCSVDataset",
+      "kwargs": {
+        "tokens_dir": "${LATTE_WORK_ROOT}/tokens/example",
+        "deck_csv": null,
+        "deck_bins": 64,
+        "pause_tokens": 0,
+        "use_deck": false,
+        "missing_deck_policy": "zeros"
+      },
+      "splits": {
+        "train": {
+          "tokens_glob": "train_*_tokens.npz"
+        },
+        "val": {
+          "tokens_glob": "val_*_tokens.npz"
+        },
+        "test": {
+          "tokens_glob": "test_*_tokens.npz"
+        }
+      }
+    }
+  }
+}

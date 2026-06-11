@@ -1,0 +1,30 @@
+{
+  "datasets": {
+    "ExampleHDF5Fields": {
+      "class": "src.data.datasets.hdf5_multi_key_field:HDF5MultiKeyFieldDataset",
+      "kwargs": {
+        "path": "${LATTE_DATA_ROOT}/example_fields.h5",
+        "field_keys": ["density"],
+        "channels_in": 1,
+        "model_channels": 1,
+        "minmax_json": "${LATTE_DATA_ROOT}/example_minmax.json",
+        "res_h": 128,
+        "res_w": 128
+      },
+      "splits": {
+        "train": {
+          "traj_start": 0,
+          "traj_count": 80,
+          "time_start": 0,
+          "time_count": 100
+        },
+        "val": {
+          "traj_start": 80,
+          "traj_count": 20,
+          "time_start": 0,
+          "time_count": 100
+        }
+      }
+    }
+  }
+}
