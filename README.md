@@ -6,16 +6,30 @@
 <img width="875" height="460" alt="Screenshot 2026-06-11 at 3 56 36 PM" src="https://github.com/user-attachments/assets/247e2c9c-9547-42b5-9a94-090e9dfdc2d8" />
 
 
-# LATTE
+# LATTE: LAtent Token Transformer for Evolutionary dynamics
 O#: O5130 
 
 LATTE is a research codebase for learning latent-token dynamics models for
-time-evolving scientific fields. The typical workflow is:
+time-evolving scientific fields. It converts simulation frames into discrete
+VQ-VAE tokens, trains transformer models to predict token dynamics, and decodes
+predicted tokens back to physical field space for rollout evaluation.
+
+The typical workflow is:
 
 1. Train a VQ-VAE on simulation frames.
 2. Export VQ tokens for each trajectory.
 3. Train a transformer over latent tokens.
 4. Roll out the transformer and decode predicted tokens to pixelspace with VQ-VAE.
+
+
+## Repository Contents
+
+- `scripts/train_vqvae.py`: train a VQ-VAE tokenizer on simulation frames.
+- `scripts/export_vq_tokens.py`: export discrete latent tokens from a trained VQ-VAE.
+- `scripts/transformer.py`: train a transformer dynamics model over tokenized trajectories.
+- `scripts/rollout_from_raw_firstframe.py`: roll out token predictions starting from raw simulation frames.
+- `configs/examples/`: public example dataset registries.
+- `sbatch/`: generic SLURM job templates.
 
 ## Installation
 
@@ -108,6 +122,22 @@ python scripts/rollout_from_raw_firstframe.py --help
 
 SLURM templates are in `sbatch/`. They are intentionally generic and use
 environment variables so users can adapt them to their own cluster.
+
+
+## Citation
+
+If you use LATTE in your research, please cite this repository:
+
+```bibtex
+@software{most2026latte,
+  title  = {LATTE: LAtent Token Transformer for Evolutionary dynamics},
+  author = {Most, Alex},
+  year   = {2026},
+  url    = {https://github.com/lanl/LATTE_SciFM}
+}
+```
+
+A `CITATION.cff` file is also provided for GitHub citation metadata.
 
 
 ## License
