@@ -1,3 +1,4 @@
+<img width="923" height="270" alt="Screenshot 2026-06-11 at 3 55 27 PM" src="https://github.com/user-attachments/assets/94ec2cfb-354f-4b6b-b739-dc584ce2f246" />
 # LATTE
 
 LATTE is a research codebase for learning latent-token dynamics models for
