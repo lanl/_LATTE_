@@ -109,11 +109,6 @@ python scripts/rollout_from_raw_firstframe.py --help
 SLURM templates are in `sbatch/`. They are intentionally generic and use
 environment variables so users can adapt them to their own cluster.
 
-## Repository Hygiene
-
-Generated artifacts should not be committed. Keep checkpoints, tokens,
-rollouts, plots, logs, and local data outside Git or under ignored directories
-such as `runs/`, `outputs/`, `tokens/`, `rollouts/`, and `checkpoints/`.
 
 ## License
 
